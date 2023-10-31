@@ -1,9 +1,8 @@
 import React , {Component} from "react";
 import PropTypes  from 'prop-types'
 import ChatBot, {Loading} from 'react-simple-chatbot';
-// import  ChatBot from 'react-simple-chatbot'
+import styles from "./Chatbot.module.css"
 import axios from 'axios';
-// import { useState } from 'react';
 
 
 class Openai extends Component {
@@ -96,7 +95,7 @@ Openai.defaultProps = {
 
 const Chatbot = () => {
     return(
-        <div>
+        <div className={styles.chatbot} >
             <ChatBot steps={
                 [
                     {
@@ -123,6 +122,9 @@ const Chatbot = () => {
                     }
                 ]
             } />
+            <div>
+
+            </div>
         </div>
     )
 }
