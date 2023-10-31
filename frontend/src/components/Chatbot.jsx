@@ -118,7 +118,7 @@ const Chatbot = () => {
                         component: <Openai />,
                         asMessage:true,
                         waitAction: true,
-                        trigger: '2',
+                        trigger: 'search',
                     }
                 ]
             } />
